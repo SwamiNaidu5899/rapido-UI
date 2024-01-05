@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04-12-2024 -Task-1</title>
+    <style>
+               @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+        *
+        {
+             font-family: 'Poppins', sans-serif;
+        }
+        .container
+        {
+            height: 30vh;
+            width: 100%;
+            background-color: aqua;
+        }
+        .row-head
+        {
+            height: 10vh;
+            width: 100%;
+            background-color: rgb(73, 218, 73);
+            display: flex;
+        }
+        .col-menu,.col-msd-icon
+        {
+            height: 6vh;
+            width: 6vh;
+            /* background-color: #fff; */
+            position: relative;
+            top: 2vh;
+            left: 2vh;
+        }
+        .col-text
+        {
+            height: 10vh;
+            width: 70%;
+        }
+        .row-2
+        {
+            height: 8vh;
+            width: 100%;
+            background-color: #fff;
+            display: flex;
+        }
+        .col-pic,.col-drop
+        {
+            height: 8vh;
+            width: 50%;
+            background: #454343;
+        }
+        .col-pic h4,.col-drop h4
+        {
+            position: relative;
+            top: -2vh;
+        }
+        .row-address
+        {
+            height: 8vh;
+            width: 90%;
+            /* position: relative; */
+            position: absolute;
+            left: 2.5%;
+            top: 23vh;
+            padding: 1.2vh;
+            background-color: white;
+        }.row-date
+        {
+            
+            height: 8vh;
+            width: 94.8%;
+            /* position: relative; */
+            left: 2.6%;
+            top: 35vh;
+            /* background-color: #8f4c4c; */
+            display: flex;
+            position: absolute;
+        }
+        .col-date,.col-time
+        {
+            height: 8vh;
+            width: 50%;
+            background: #fff;
+        }
+        .row-end
+        {
+            height: 8vh;
+            width: 94.8%;
+            position: relative;
+            left: 2.6%;
+            top: 2vh;
+            background-color: blueviolet;
+        }
+        img{
+            height: 5vh;
+            width: 5vh;
+        }
+         h4
+        {
+            position: relative;
+            /* top: -2vh; */
+            text-align: center;
+            /* left: 5%; */
+            color: white;
+        }
+        .row-map
+
+        .row h4
+        {
+            font-size: 15px;
+            
+        }
+        img
+        {
+            position: relative;
+            top: 1.5vh;
+            left: 1vh;
+        }
+        span p
+        {
+            position: relative;
+            top: -7.5vh;
+            margin-left: 30%;
+            font-weight: bold;
+        }
+        .row-address p
+        {
+            font-size: 15px;
+            text-align: center;
+            position: relative;
+            top: -1vh;
+            font-weight: bold;
+        }
+        .h4
+        {
+            position: relative;
+            top: 1.8vh;
+            margin: 0;
+        }
+        @media screen and (min-width:768px) {
+            *
+            {
+                border-radius: 5px;
+            }
+            body
+            {
+                background-color: #3cb1af;
+            }
+            .container
+            {
+                height: 92vh;
+                width: 25%;
+                position: relative;
+                left: 35%;
+               background-color: #fff;
+               
+            }
+            iframe
+            {
+                width: 100%;
+            }
+        }
+        @media screen and (min-width:376px) and (max-width:460px){
+            iframe
+            {
+                width: 100%;
+            }
+            h4
+            {
+                position: relative;
+                top: 1vh;
+            }
+            .col-menu,.col-msd-icon
+            {
+                position: relative;
+                left: 0%;
+            }
+            .col-pic h4,.col-drop h4
+            {
+               position: relative;
+                top: 0vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row-head">
+            <div class="col-menu">
+                <img src="./menus.png" alt="">
+            </div>
+            <div class="col-text">
+                <h4>BOOK NOW</h4>
+            </div>
+            <div class="col-msd-icon">
+                <img src="./missed-call.png" alt="">
+            </div>
+        </div>
+        <div class="row-2">
+            <div class="col-pic">
+                <h4>PICKUP</h4>
+            </div>
+            <div class="col-drop">
+                <H4>DROP OFF</H4>
+            </div>
+        </div>
+       <div class="row-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60886.113977189605!2d78.3268031205213!3d17.489263126042704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91ec0162f43d%3A0x3288c6fe4358cf48!2sKukatpally%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1704442493643!5m2!1sen!2sin" width="360" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="row-address">
+           <p>Mr John Smith. 132, My Street, Kingston, Hyd 12401</p>
+        </div>
+        <div class="row-date">
+            <div class="col-date">
+                <span><img src="./calendar.png" alt=""><p>05-01-2024</p></span>
+            </div>
+            <div class="col-time">
+                <span><img src="./clock.png" alt=""><p>01:00-04:00</p></span>
+            </div>
+        </div>
+       </div>
+        
+        <div class="row-end">
+            <h4 class="h4">NEXT</h4>
+        </div>
+    </div>
+</body>
+</html>
